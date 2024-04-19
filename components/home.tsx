@@ -5,7 +5,7 @@ import Image from "next/image";
 function Home() {
   return (
     <div className="w-1/2">
-      <Image src={Near} />
+      <Image src={Near} alt="picture of near" />
       <div></div>
     </div>
   );
