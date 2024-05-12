@@ -3,6 +3,8 @@ import SmallNear from "../public/SmallNear.jpg";
 import Image from "next/image";
 
 function Contact() {
+  const n = new Date();
+  const date = n.toLocaleString("th-TH", { timeStyle: "short" });
   return (
     <>
       <footer className="flex flex-col w-full h-full pt-[86px]">
@@ -49,7 +51,7 @@ function Contact() {
               <p className="uppercase text-[11px] text-gray-300 mb-[17px]">
                 Local Time
               </p>
-              <p>11:53 BE GMT+7</p>
+              <p>{date} BE GMT+7</p>
             </div>
           </div>
           <div className="block">
@@ -57,11 +59,13 @@ function Contact() {
               socials
             </p>
             <ul className="flex [&>li]:mx-[13px]">
-              <li className="hover:underline">
-                <a>GitHub</a>
+              <li className="hover:underline underline-offset-8">
+                <a href="#" className="pb-2">
+                  GitHub
+                </a>
               </li>
-              <li>
-                <a>Linkedin</a>
+              <li className="hover:underline underline-offset-8">
+                <a href="#">Linkedin</a>
               </li>
             </ul>
           </div>
